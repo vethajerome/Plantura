@@ -1,0 +1,107 @@
+.navbar {
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    background: #fff;
+    padding: 15px 7%;
+    transition: 0.5s;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    align-items:center;
+}
+
+.brand-name {
+    font-family: 'Poppins', sans-serif; /* Use Poppins for a modern look */
+    font-weight: bold; /* Make the font bold */
+    font-size: 24px; /* Larger font size for emphasis */
+    margin-left: 10px; /* Space between logo and text */
+    color: black; /* Default dark green color for light theme */
+    transition: color 0.5s; /* Smooth transition for color change */
+}
+
+ul {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the list items */
+    align-items: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Different font for list items */
+}
+
+.toggle-icon {
+    width: 60px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.search-box {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align input and icon to ends */
+    background: #242424;
+    padding: 15px 20px;
+    border-radius: 50px;
+    transition: background 0.5s, color 0.5s;
+}
+
+.search-box input {
+    flex-grow: 1; /* Allow input to grow and fill space */
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.5s;
+}
+
+.search-box input::placeholder {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.search-box img {
+    width: 20px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between input and image */
+}
+
+/* Dark Mode Styles */
+.dark .navbar {
+    background: rgb(17, 96, 17); /* Hex: #116011 rgb(17, 96, 17)*/
+    color: #fff;
+}
+
+.dark .brand-name {
+    color: #fff; /* Change brand name color to white for dark mode */
+}
+
+.dark .search-box {
+    background: #fff;
+}
+
+.dark .search-box input {
+    color: #222;
+}
+
+.dark .search-box input::placeholder {
+    color: #222;
+}

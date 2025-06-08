@@ -1,0 +1,133 @@
+.chatbot-container {
+  position: relative;
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 360px; /* Adjusted width */
+  max-height: 500px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e2e8f0; /* Light border */
+}
+
+.chatbox-header {
+  background: linear-gradient(135deg, #6b46c1, #b83280); /* Gradient background */
+  padding: 16px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.chatbox-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chatbox-content {
+  flex-grow: 1;
+  padding: 16px;
+  background: #f9fafb; /* Slightly off-white background */
+  overflow-y: auto;
+}
+
+.chatbox-input {
+  display: flex;
+  padding: 12px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.chatbox-input input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  margin-right: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox-input button {
+  background: #6b46c1;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.chatbox-input button:disabled {
+  background: #e2e8f0;
+  cursor: not-allowed;
+}
+
+.chatbox-input .clear-chat {
+  margin-left: 10px;
+  background: #e53e3e;
+  color: #ffffff;
+}
+
+.chat-history {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-message .message {
+  padding: 12px 16px;
+  border-radius: 20px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.chat-message.user .message {
+  background: #6b46c1;
+  color: #ffffff;
+  align-self: flex-end;
+}
+
+.chat-message.bot .message {
+  background: #edf2f7;
+  color: #2d3748;
+  align-self: flex-start;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.loader {
+  border: 4px solid #e2e8f0;
+  border-radius: 50%;
+  border-top: 4px solid #6b46c1;
+  width: 24px;
+  height: 24px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,17 @@
+.about-page.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.about-page.dark {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.about-page {
+  padding: 20px;
+}
+
+.about-header {
+  margin-bottom: 20px;
+}

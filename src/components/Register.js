@@ -9,7 +9,7 @@ import {
   CardActions,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const StyledCard = styled(Card)(({ theme }) => ({
   minWidth: 275,

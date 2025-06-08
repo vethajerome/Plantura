@@ -35,22 +35,14 @@ const About = ({ theme }) => {
 
   const chatbotRef = useRef(null); // Ref for chatbot container
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
   const handleLanguageSelect = (language) => {
     setSelectedLanguage(language);
     setShowChatbot(true); // Show chatbot when a language is selected
     handleClose();
   };
 
-  const toggleChatbot = () => {
-    setShowChatbot((prevShowChatbot) => !prevShowChatbot); // Toggle chatbot visibility
+  const handleClose = () => {
+    setAnchorEl(null);
   };
 
   const open = Boolean(anchorEl);

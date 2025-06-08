@@ -176,7 +176,7 @@ const LandingPage = () => {
             variant="contained"
             color="success"
             style={{ fontSize: "18px", padding: "10px 20px" }}
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/home")}
           >
             Login
           </Button>
